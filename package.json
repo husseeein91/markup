@@ -1,0 +1,14 @@
+{
+  "name": "markup",
+  "version": "1.0.0",
+  "description": "Book details, Landing/Home. For a book store application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohamed Hussein",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.0.18"
+  }
+}
