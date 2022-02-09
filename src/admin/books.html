@@ -8,23 +8,7 @@
     <link rel="stylesheet" href="app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: { mc: "#3F3D56", nc: "#CCCCCC" },
-            fontFamily: {
-              Roboto: ["Roboto"],
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="../../dist/style.css" />
   </head>
   <body class="font-Roboto">
     <div class="w-screen md:h-screen flex flex-col">
@@ -36,7 +20,7 @@
         </div>
         <div class="flex items-center">
           <button class="text-white mr-6">Logout</button>
-          <button>
+          <button class="md:hidden">
             <img src="assets/menu2.svg" alt="menu" />
           </button>
         </div>
