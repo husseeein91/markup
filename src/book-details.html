@@ -27,40 +27,62 @@
     />
   </head>
   <body class="bg-white box-border text-grey">
-    <nav class="w-full flex items-center justify-center bg-hero-pattern h-16">
-      <div
-        class="lg:w-cw w-screen pl-2 lg:pl-8 pr-4 lg:pr-16 flex items-center justify-between"
-      >
-        <a class="cursor-pointer"
-          ><img src="./images/logo.svg" alt="logo" class="w-20 h-full"
-        /></a>
-        <div class="hidden lg:flex items-center">
-          <a
-            href="./index.html"
-            class="px-6 py-4 font-medium text-purple text-lg"
-            >Home</a
-          >
-          <a href="#" class="px-6 py-4 font-medium text-purple text-lg"
-            >Books</a
-          >
-          <a href="#" class="px-6 py-4 font-medium text-purple text-lg"
-            >Categories</a
-          >
-        </div>
-        <div class="hidden lg:flex items-center">
-          <a class="bg-white shadow-sm rounded-md px-3 py-1 mr-2">Login</a>
-          <a class="bg-white shadow-sm rounded-md px-3 py-1">Register</a>
-        </div>
-        <div class="lg:hidden">
-          <button>
-            <img src="./images/cart.svg" alt="cart" class="w-8 h-7 mr-2" />
-          </button>
-          <button>
-            <img src="./images/menu.svg" alt="menu" class="w-8 h-8" />
-          </button>
-        </div>
+    <header class="bg-hero-pattern">
+      <div class="max-w-7xl flex justify-between gap-5 mr-auto ml-auto px-5">
+        <!-- Logo -->
+        <section class="flex items-center">
+          <img
+            src="./images/booklogo.png"
+            alt="for book house logo"
+            class="h-16"
+          />
+        </section>
+
+        <!-- links -->
+        <nav class="flex items-center text-nb">
+          <ul class="flex gap-10">
+            <li class="hover:text-mc cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="hover:text-mc cursor-pointer">
+              <a href="#">Books</a>
+            </li>
+            <li class="hover:text-mc cursor-pointer">
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- cart -->
+        <ul class="flex gap-7 items-center px-5">
+          <!-- <li>
+                  <img
+                    src="./images/account.png"
+                    alt="for account setting"
+                    class="h-8"
+                  />
+                </li>
+                <li>
+                  <img src="./images/cart.png" alt="for cart view" class="h-8" />
+                </li> -->
+
+          <li class="p-4">
+            <a
+              href="./signin.html"
+              class="bg-white shadow-sm rounded-md px-3 py-1 mr-2"
+              >Login</a
+            >
+          </li>
+          <li class="p-4">
+            <a
+              href="./signup.html"
+              class="bg-white shadow-sm rounded-md px-3 py-1 mr-2"
+              >Register</a
+            >
+          </li>
+        </ul>
       </div>
-    </nav>
+    </header>
     <div class="container py-4 bg-white w-full">
       <h1 class="text-center py-8 text-5xl text-grey font-semibold">
         The Book Of Life By Great Author
@@ -106,8 +128,8 @@
         </button>
       </div>
     </div>
-    <div class="bg-purple py-4">
-      <div class="container">
+    <div class="bg-purple py-4 container">
+      <div class="">
         <div class="lg:flex flex-row justify-between items-center py-5">
           <span
             class="hidden lg:block bg-white text-purple text-5xl font-bold py-2 px-4 rounded-xl shadow-sm"
@@ -182,7 +204,7 @@
       class="bg-nc py-2 bg-hero-pattern w-full flex items-center justify-evenly text-grey"
     >
       <div
-        class="w-screen lg:w-cw flex flex-col lg:flex-row items-center lg:justify-around py-4"
+        class="container w-screen lg:w-cw flex flex-col lg:flex-row items-center lg:justify-around py-4"
       >
         <div class="flex flex-col items-center w-5/6 lg:w-1/4">
           <img class="w-20 h-20" src="./images/logo.svg" alt="logo" />
@@ -194,11 +216,11 @@
         <div
           class="w-1/4 hidden lg:flex flex-col items-center justify-center gap-2 font-semibold"
         >
-          <a>Home</a>
-          <a>Books</a>
-          <a>Categories</a>
-          <a>Contact Us</a>
-          <a>About Us</a>
+          <a href="./index.html">Home</a>
+          <a href="#">Books</a>
+          <a href="#">Categories</a>
+          <a href="#">Contact Us</a>
+          <a href="#">About Us</a>
         </div>
         <div
           class="w-5/6 lg:w-1/4 flex flex-col items-center self-center text-center mt-6 lg:mt-0"
