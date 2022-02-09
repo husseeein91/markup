@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books House | Sign up</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="./images/faveico-light.png"
+    />
+  </head>
+  <body class="text-grey">
+    <div class="w-full flex flex-col items-center relative min-h-screen">
+      <nav class="w-full flex items-center justify-center bg-hero-pattern h-16">
+        <div
+          class="lg:w-cw w-full pl-2 lg:pl-8 pr-4 lg:pr-16 flex items-center justify-between"
+        >
+          <a class="cursor-pointer"
+            ><img src="./images/logo.svg" alt="logo" class="w-20 h-full"
+          /></a>
+          <div class="hidden lg:flex items-center">
+            <a
+              href="./index.html"
+              class="px-6 py-4 font-medium text-purple text-lg"
+              >Home</a
+            >
+            <a href="#" class="px-6 py-4 font-medium text-purple text-lg"
+              >Books</a
+            >
+            <a href="#" class="px-6 py-4 font-medium text-purple text-lg"
+              >Categories</a
+            >
+          </div>
+          <div class="hidden lg:flex items-center">
+            <a class="bg-white shadow-sm rounded-md px-3 py-1 mr-2">Login</a>
+            <a class="bg-white shadow-sm rounded-md px-3 py-1">Register</a>
+          </div>
+          <div class="lg:hidden">
+            <button>
+              <img src="./images/cart.svg" alt="cart" class="w-8 h-7 mr-2" />
+            </button>
+            <button>
+              <img src="./images/menu.svg" alt="menu" class="w-8 h-8" />
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="lg:w-cw w-full flex items-center justify-center mt-2 py-8">
+        <div class="flex items-center border-2 w-11/12 p-2 lg:w-5/6 mt-4">
+          <div
+            class="w-full lg:w-2/3 h-fit-content bg-white rounded-md p-4 flex flex-col items-center mt-2"
+          >
+            <div class="w-full flex flex-col">
+              <div class="flex items-center">
+                <span class="font-bold text-2xl mb-2">Sign up</span>
+                <img
+                  class="w-7 h-7"
+                  src="./images/crossfingers.svg"
+                  alt="crossed fingers"
+                />
+              </div>
+              <div class="w-full flex items-center">
+                <span>Already have an account ?</span>
+                <a class="font-bold ml-2" href="">Sign in</a>
+              </div>
+            </div>
+            <div class="w-full lg:w-3/4 mt-10">
+              <div class="relative w-full">
+                <div class="border"></div>
+                <span
+                  class="absolute left-1/2 -translate-x-1/2 -top-8 text-gray-600 bg-white p-4"
+                  >Sign up with email</span
+                >
+              </div>
+              <div
+                class="w-full flex flex-col lg:flex-row items-center justify-between mt-6 gap-4"
+              >
+                <div class="w-full lg:w-1/2 flex flex-col items-start">
+                  <span>First Name</span>
+                  <input
+                    type="text"
+                    name="first_name"
+                    class="w-full px-2 py-3 border rounded-md border-mc mt-2"
+                  />
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col items-start">
+                  <span>Last Name</span>
+                  <input
+                    type="text"
+                    name="last_name"
+                    class="w-full px-2 py-3 border rounded-md border-mc mt-2"
+                  />
+                </div>
+              </div>
+              <div class="w-full mt-4 flex flex-col items-start">
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  class="w-full px-2 py-3 border rounded-md border-mc mt-2"
+                />
+              </div>
+              <div class="w-full mt-4 flex flex-col items-start">
+                <span>Password</span>
+                <input
+                  type="password"
+                  name="password"
+                  class="w-full px-2 py-3 border rounded-md border-mc mt-2"
+                />
+              </div>
+              <div class="w-full mt-4 flex flex-col items-start">
+                <span>Confirm Password</span>
+                <input
+                  type="password"
+                  name="confirm_password"
+                  class="w-full px-2 py-3 border rounded-md border-mc mt-2"
+                />
+              </div>
+              <button
+                class="w-full px-2 py-3 font-semibold text-xl bg-purple text-white rounded-md mt-6"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+          <img
+            class="hidden lg:block"
+            src="./images/register.svg"
+            alt="signup-welcome"
+          />
+        </div>
+      </div>
+    </div>
+    <footer
+      class="py-2 bg-hero-pattern w-full flex items-center justify-evenly text-grey"
+    >
+      <div
+        class="w-full lg:w-cw flex flex-col lg:flex-row items-center lg:justify-around py-4"
+      >
+        <div class="flex flex-col items-center w-5/6 lg:w-1/4">
+          <img class="w-20 h-20" src="./images/logo.svg" alt="logo" />
+          <p class="text-center">
+            let us help you to grow in your field through a collection of the
+            most popular books with less price than any one.
+          </p>
+        </div>
+        <div
+          class="w-1/4 hidden lg:flex flex-col items-center justify-center gap-2 font-semibold"
+        >
+          <a>Home</a>
+          <a>Books</a>
+          <a>Categories</a>
+          <a>Contact Us</a>
+          <a>About Us</a>
+        </div>
+        <div
+          class="w-5/6 lg:w-1/4 flex flex-col items-center self-center text-center mt-6 lg:mt-0"
+        >
+          <span>Follow us on</span>
+          <div class="flex items-center gap-2 mt-2">
+            <a
+              ><img class="w-8 h-8" src="./images/facebook.svg" alt="facebook"
+            /></a>
+            <a
+              ><img class="w-8 h-8" src="./images/insta.svg" alt="instagram"
+            /></a>
+            <a
+              ><img class="w-8 h-8" src="./images/twitter.svg" alt="twitter"
+            /></a>
+          </div>
+          <span class="mt-6"> &copy; 2022 talpods</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

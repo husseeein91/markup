@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <!-- Navbar section -->
+
+    <nav class="w-full flex items-center justify-center bg-hero-pattern h-16">
+      <div
+        class="lg:w-cw w-screen pl-2 lg:pl-8 pr-4 lg:pr-16 flex items-center justify-between"
+      >
+        <a class="cursor-pointer"
+          ><img src="./images/logo.svg" alt="logo" class="w-20 h-full"
+        /></a>
+        <div class="hidden lg:flex items-center">
+          <a
+            href="./index.html"
+            class="px-6 py-4 font-medium text-purple text-lg"
+            >Home</a
+          >
+          <a href="#" class="px-6 py-4 font-medium text-purple text-lg"
+            >Books</a
+          >
+          <a href="#" class="px-6 py-4 font-medium text-purple text-lg"
+            >Categories</a
+          >
+        </div>
+        <div class="hidden lg:flex items-center">
+          <a class="mr-2"
+            ><img
+              src="./images/account.png"
+              alt="for account setting"
+              class="h-8"
+          /></a>
+          <a class=""
+            ><img src="./images/cart.png" alt="for cart view" class="h-8"
+          /></a>
+        </div>
+        <div class="lg:hidden">
+          <button>
+            <img src="./images/cart.svg" alt="cart" class="w-8 h-7 mr-2" />
+          </button>
+          <button>
+            <img src="./images/menu.svg" alt="menu" class="w-8 h-8" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-7xl mr-auto ml-auto py-16 px-5">
+      <!-- User info -->
+      <section class="grid lg:grid-cols-4 md:gap-5 lg:gap-10 lg:justify-center">
+        <!-- profile pic -->
+        <div
+          class="self-center w-52 justify-self-center md:col-span-2 lg:col-span-1 md:order-1 relative"
+        >
+          <img src="././images/acc.png" alt="for user picture" />
+          <img
+            src="././images/pen.png"
+            alt="pen for edit"
+            class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 mr-auto ml-auto mt-auto mb-auto w-10"
+          />
+        </div>
+
+        <!-- Form -->
+        <div class="items-center md:col-span-2 order-3 lg:order-2">
+          <!-- name -->
+          <div class="grid md:grid-cols-2 gap-10 mb-2">
+            <div class="grid">
+              <label for="Name" class="text-xs mb-2">First Name</label>
+              <input
+                type="text"
+                placeholder="Adam"
+                class="focus:outline-none border-bb border-b-2 pb-2"
+              />
+            </div>
+            <div class="grid">
+              <label for="Name " class="text-xs mb-2">Last Name</label>
+              <input
+                type="text"
+                placeholder="Loli"
+                class="focus:outline-none border-bb border-b-2 pb-2"
+              />
+            </div>
+          </div>
+
+          <!-- email -->
+          <div class="grid md:grid-cols-2 gap-10 mb-2">
+            <div class="grid">
+              <label for="Email" class="text-xs mb-2">Email</label>
+              <input
+                type="text"
+                placeholder="user@email.com"
+                class="focus:outline-none border-bb border-b-2 pb-2"
+              />
+            </div>
+            <div class="grid">
+              <label for="Password" class="text-xs mb-2">Password</label>
+              <input
+                type="text"
+                placeholder="*************"
+                class="focus:outline-none border-bb border-b-2 pb-2"
+              />
+            </div>
+          </div>
+          <div class="grid">
+            <label for="Address" class="text-xs">Address</label>
+            <input
+              type="text"
+              placeholder="apatment 2 st.4"
+              class="focus:outline-none border-bb border-b-2 pb-2"
+            />
+          </div>
+        </div>
+
+        <!-- Edit -->
+        <div
+          class="w-7 md:col-span-2 lg:col-span-1 justify-self-end lg:justify-self-start sm:order-2 lg:order-3"
+        >
+          <img src="./images/editicon.png" alt="for edit" />
+        </div>
+      </section>
+
+      <!-- Orders -->
+      <section class="flex flex-col mt-16 gap-10 md:px-5">
+        <!-- section header -->
+        <header class="text-center">
+          <h2 class="text-mc font-bold text-5xl mb-3">My Orders</h2>
+          <p class="text-mcm text-sm text-center">
+            Click On Order To View Details
+          </p>
+        </header>
+        <!-- MD table -->
+        <table class="text-center hidden md:block self-center table-auto">
+          <thead class="text-xl font-bold text-mc border-b-4 border-mc">
+            <tr>
+              <th class="p-2">Order No.</th>
+              <th class="p-2">Total Price</th>
+              <th class="p-2">Shipping Address</th>
+              <th class="p-2">Ordered On</th>
+              <th class="p-2">Delevered On</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+            <tr
+              class="text-mcm border-b-2 border-mcm hover:bg-purple hover:text-white cursor-pointer"
+            >
+              <td class="pt-4">1234</td>
+              <td class="pt-4">130$</td>
+              <td class="pt-4">Apt.20 St.No. 34</td>
+              <td class="pt-4">22/2/2022</td>
+              <td class="pt-4">1/3/2022</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- SM table -->
+        <section class="md:hidden">
+          <div class="card flex flex-col gap-3 bg-ce p-4">
+            <div class="flex gap-5">
+              <span class="w-36">Order No.</span> : 1234
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Total Price</span>: 130$
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Shipping Address</span>: Apt.20 St.No. 34
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Order On</span>: 22/2/2022
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Deleverd On</span>: 1/3/2022
+            </div>
+          </div>
+          <!--  -->
+          <div class="card flex flex-col gap-3 p-4">
+            <div class="flex gap-5">
+              <span class="w-36">Order No.</span>: 1234
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Total Price</span>: 130$
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Shipping Address</span>: Apt.20 St.No. 34
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Order On</span>: 22/2/2022
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Deleverd On</span>: 1/3/2022
+            </div>
+          </div>
+          <!--  -->
+          <div class="card flex flex-col gap-3 bg-ce p-4">
+            <div class="flex gap-5">
+              <span class="w-36">Order No.</span>: 1234
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Total Price</span>: 130$
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Shipping Address</span>: Apt.20 St.No. 34
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Order On</span>: 22/2/2022
+            </div>
+            <div class="flex gap-5">
+              <span class="w-36">Deleverd On</span>: 1/3/2022
+            </div>
+          </div>
+        </section>
+
+        <!-- Pagination -->
+        <section
+          class="h-16 bg-white bottom-8 mt-6 flex items-center justify-center p-2"
+        >
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            &#60;
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold bg-purple text-white"
+          >
+            1
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            2
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            3
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            4
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            5
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            6
+          </button>
+          <span
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc text-center"
+            >...</span
+          >
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            11
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            12
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            13
+          </button>
+          <button
+            class="w-10 h-full rounded-sm border text-xl mr-2 font-bold text-mc"
+          >
+            >
+          </button>
+        </section>
+      </section>
+    </main>
+
+    <footer
+      class="py-2 bg-hero-pattern w-full flex items-center justify-evenly text-grey"
+    >
+      <div
+        class="w-screen lg:w-cw flex flex-col lg:flex-row items-center lg:justify-around py-4"
+      >
+        <div class="flex flex-col items-center w-5/6 lg:w-1/4">
+          <img class="w-20 h-20" src="./images/logo.svg" alt="logo" />
+          <p class="text-center">
+            let us help you to grow in your field through a collection of the
+            most popular books with less price than any one.
+          </p>
+        </div>
+        <div
+          class="w-1/4 hidden lg:flex flex-col items-center justify-center gap-2 font-semibold"
+        >
+          <a>Home</a>
+          <a>Books</a>
+          <a>Categories</a>
+          <a>Contact Us</a>
+          <a>About Us</a>
+        </div>
+        <div
+          class="w-5/6 lg:w-1/4 flex flex-col items-center self-center text-center mt-6 lg:mt-0"
+        >
+          <span>Follow us on</span>
+          <div class="flex items-center gap-2 mt-2">
+            <a
+              ><img class="w-8 h-8" src="./images/facebook.svg" alt="facebook"
+            /></a>
+            <a
+              ><img class="w-8 h-8" src="./images/insta.svg" alt="instagram"
+            /></a>
+            <a
+              ><img class="w-8 h-8" src="./images/twitter.svg" alt="twitter"
+            /></a>
+          </div>
+          <span class="mt-6"> &copy; 2022 talpods</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
